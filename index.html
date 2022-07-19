@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cafe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo-block">
+                    <img class="logo" src="img/logo.png" alt="logo">
+                    <h1 class="title">NAME CAFE</h1>
+                </div>
+                <div class="backet-btn"><i class="backet-ico fa-solid fa-cart-shopping"></i></div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="select__pizza-wrapper">
+            <div class="bg-select"></div>
+            <div class="select__pizza-block"></div>
+        </div>
+        <section class="pizza-section">
+            <div class="container">
+                <div class="pizza-block"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="backet-wrapper">
+        <div class="bg"></div>
+        <div class="backet">
+            <i class="close-ico fa-solid fa-xmark"></i>
+            <div class="backet-content">
+                <img class="empty-img" src="img/empty.png" alt="empty">
+            </div>
+            <button class="backet-open-form__btn">К оформлению заказа</button>
+        </div>
+    </div>
+
+    <div class="form-wrapper">
+        <div class="form-bg"></div>
+        <form class="form" action="post">
+            <div class="form__input-block">
+                <label for="name">
+                    Введите имя*
+                    <input class="input input__name" id="name" type="text" required>
+                </label>
+                <label for="number">
+                    Введите номер телефона*
+                    <input value="+998 " maxlength="14" class="input input__number" id="number" type="text" required>
+                </label>
+                <label for="textarea">
+                    Описание к заказу
+                    <textarea class="textarea" id="textarea"></textarea>
+                </label>
+                <label for="address">
+                    Укажите адрес
+                    <div id="mymap"></div>
+                    <a class="map-error__link" href="https://yandex.uz/support/common/browsers-settings/geolocation.html">Настроить доступ к местоположению</a>
+                </label>
+            </div>
+            <div class="delive-btn__wrapper">
+                <i class="close-form-ico fa-solid fa-xmark"></i>
+                <div class="backet-list"></div>
+                <div class="delive__total-cost--wrapper">
+                    <p class="delive__total-cost"></p>
+                    <div class="delive-btn">Заказать</div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="success-block__wrapper">
+        <div class="success-bg"></div>
+        <div class="success-block">
+            <img class="success-img" src="img/success.png" alt="success-logo">
+            <p class="success-text">Ваша заявка успешно отправлена</p>
+            <i class="success-ico fa-solid fa-check"></i>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
